@@ -24,5 +24,8 @@
   },
   "dependencies": {
     "react-dom": "^19.2.0"
-  }
+  },
+  "browserslist": [
+    "last 10 Chrome version"
+  ]
 }
