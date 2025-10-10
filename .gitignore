@@ -1,0 +1,10 @@
+# Visual Studio / VS Code caches
+.vs/
+*.db
+*.db-shm
+*.db-wal
+/node_modules
+./dist
+/parcel-cache
+
+
