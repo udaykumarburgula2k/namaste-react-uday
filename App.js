@@ -24,12 +24,25 @@ console.log(jsxHeading); // This will log a React element object
 // React Component - A function that returns a React element
 // 2 Types of Components - Functional Components - NEW way and Class Based Components - OLD way
 
+
+const Title = () => {
+    return (
+        <h1>
+            Nameste from TitleComponent!!
+        </h1>
+    );
+};
+
+
+// component composition - using one component inside another component
+
 // React Functional Component - using return statement
 const HeadingComponent = () => {
     return (
-        <h1>
+        <div>
+            <Title />
             Nameste from HeadingComponent!!
-        </h1>
+        </div>
     );
 };
 
