@@ -1,13 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const Header = () => 
-(
-    <div className="header">
+
+/* 
+AppLayout
+    - Header
+        - Logo
+        - Nav Items
+    - Body
+        - Search Bar
+        - Restaurant List
+        - Restaurant Card
+    - Footer
+*/
+
+const LogoHeader = () => (
+    
         <div className="logo-container">
             <img src="https://avatars.githubusercontent.com/u/16599609?s=48&v=4" alt="App Logo" className="logo" />
         </div>
-        <div className="nav-items">
+    
+);
+
+const NavItems = () =>
+(
+    <div className="nav-items">
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -15,13 +32,66 @@ const Header = () =>
                 <li>Cart</li>
             </ul>
         </div>
+);
+
+const Header = () => 
+(
+   <div className="header">
+        <LogoHeader />
+        <NavItems />
+    </div>
+);
+
+
+
+/* 
+const restaurantCardStyle = {
+    border: "1px solid #ccc",
+    borderRadius: "8px",
+    padding: "16px",
+    textAlign: "center",
+    width: "200px",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    backgroundColor: "#f9f9f9"
+};
+
+<div style={restaurantCardStyle} ></div 
+*/
+
+const RestaurantCard = () =>
+(
+    <div className="rest-card" >
+        <img className="rest-logo"
+        src="https://www.reshot.com/preview-assets/icons/ZLG4EM73QR/cooking-on-stove-ZLG4EM73QR.svg" 
+        alt="Fav restaurant" />
+        <h3>Restaurant Name</h3>
+        <p>Cuisine Type</p>
+        <p>Rating: 4.5</p>
+        <p>Minimum time: 30 mins</p>
+    </div>
+);
+
+const Body = () => 
+(
+    <div style={{backgroundColor: "#8080F0"}}>
+        <div className="search-bar">Search</div>
+        <div className="rest-container">
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+            <RestaurantCard />
+        </div>
     </div>
 );
 
 const AppLayout = () => (
     <div className="app">
-        Hi!! Welcome to React Application.
         <Header></Header>
+        <Body></Body>
     </div>
 );
 
