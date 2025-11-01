@@ -30,7 +30,7 @@
     width: 100px;
     margin: 10px;
     padding: 10px;
-    height: 200px;
+    height: 300px;
 }
 
     .rest-card:hover {
@@ -43,5 +43,13 @@
     width: 80%;
     padding: 5px;
     border-radius: 8px;
-    height: 15px;
+    height: 80px;
+}
+
+/* added rule to force wrapping for long cuisine strings */
+.cuisines {
+    white-space: normal; /* allow normal wrapping */
+    overflow-wrap: anywhere; /* break long words if necessary */
+    word-break: break-word; /* fallback for some browsers */
+    margin: 8px 0;
 }
