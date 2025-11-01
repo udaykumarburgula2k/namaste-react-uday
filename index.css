@@ -53,3 +53,9 @@
     word-break: break-word; /* fallback for some browsers */
     margin: 8px 0;
 }
+
+.filter-btn-toprated{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
