@@ -1274,12 +1274,16 @@ const Body = () =>
     <div style={{backgroundColor: "#8080F0"}}>
         <div className="search-bar">Search</div>
         <div className="rest-container">
-            <RestaurantCard resData={restaurantList[0]} />
-            <RestaurantCard resData={restaurantList[1]} />
-            <RestaurantCard resData={restaurantList[2]} />
-            <RestaurantCard resData={restaurantList[3]} />
-			<RestaurantCard resData={restaurantList[4]} />
-			<RestaurantCard resData={restaurantList[5]} />
+		{
+			restaurantList.map((restaurant) => 
+				(
+					<RestaurantCard key={restaurant.info.id} resData={restaurant} ></RestaurantCard>
+				)
+			)
+			
+		}
+            
+            
         </div>
     </div>
 );
