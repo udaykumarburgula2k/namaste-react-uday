@@ -1,3 +1,17 @@
-#heading{
-    color: red;
+.header {
+    display: flex;
+    -webkit-justify-content: inherit;
+    justify-content: space-between;
+}
+.logo {
+    width: 70px;
+}
+.nav-items ul{
+    display: flex;
+}
+
+.header .nav-items ul li {
+    padding: 10px;
+    margin:  10px;
+    list-style-type: none;
 }
