@@ -58,19 +58,22 @@ const restaurantCardStyle = {
 <div style={restaurantCardStyle} ></div 
 */
 
-const RestaurantCard = (props) => {
+const RestaurantCard = ({resName, cuisine, rating, minTime}) => {
+    // method #1 props passed as parameter
   /* props */
   console.log(props);
-
+  // method #2 destructuring props object
+  // const {resName, cuisine, rating, minTime} = props; // destructuring props object
+  // method #3 destructuring in parameter
    return (
         <div className="rest-card" >
             <img className="rest-logo"
             src="https://www.reshot.com/preview-assets/icons/ZLG4EM73QR/cooking-on-stove-ZLG4EM73QR.svg" 
             alt="Fav restaurant" />
-            <h3>{props.resName}</h3>
-            <p>{props.rating}</p>
-            <p>{props.cuisine}</p>
-            <p>{props.minTime}</p>
+            <h3>{resName}</h3>
+            <p>{cuisine}</p>
+            <p>{rating}</p>
+            <p>{minTime}</p>
         </div>
     );
 }
