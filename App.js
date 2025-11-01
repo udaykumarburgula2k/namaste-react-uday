@@ -9,7 +9,7 @@ import ReactDOM from "react-dom/client";
 
 
 // JSX - JavaScript XML (HTML like syntax inside JavaScript)
-const jsxHeading = <h1 id="jsx-heading">Nameste JSX--</h1>;
+const jsxHeading = <h1 id="jsx-heading" className="header" tabIndex="2" >Nameste JSX--</h1>;
 
 console.log(jsxHeading); // This will log a React element object
 
