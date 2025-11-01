@@ -1278,6 +1278,8 @@ const Body = () =>
             <RestaurantCard resData={restaurantList[1]} />
             <RestaurantCard resData={restaurantList[2]} />
             <RestaurantCard resData={restaurantList[3]} />
+			<RestaurantCard resData={restaurantList[4]} />
+			<RestaurantCard resData={restaurantList[5]} />
         </div>
     </div>
 );
