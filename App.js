@@ -61,7 +61,7 @@ const restaurantCardStyle = {
 const RestaurantCard = ({resName, cuisine, rating, minTime}) => {
     // method #1 props passed as parameter
   /* props */
-  console.log(props);
+  // console.log(props);
   // method #2 destructuring props object
   // const {resName, cuisine, rating, minTime} = props; // destructuring props object
   // method #3 destructuring in parameter
@@ -83,7 +83,7 @@ const Body = () =>
     <div style={{backgroundColor: "#8080F0"}}>
         <div className="search-bar">Search</div>
         <div className="rest-container">
-            <RestaurantCard resName="subway" cuisine="veg delite,sallad,fastfood" rating="4.5" minTime="30 mins" />
+            <RestaurantCard resName="subway" cuisine="veg delite,fastfood" rating="4.5" minTime="30 mins" />
             <RestaurantCard resName="kfc" cuisine="chicken,fastfood" rating="4.0" minTime="30 mins"  />
             <RestaurantCard resName="domino" cuisine="pizza,fastfood" rating="4.2" minTime="30 mins"  />
         </div>
