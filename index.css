@@ -19,7 +19,7 @@
     list-style-type: none;
 }
 
-.rest-container{
+.rest-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,7 +27,7 @@
 
 .rest-card {
     border: 1px solid black;
-    width: 100px;
+    width: 220px; /* increased so long text has room to wrap */
     margin: 10px;
     padding: 10px;
     height: 300px;
@@ -36,7 +36,7 @@
     .rest-card:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border: 10px solid black;
-        cursor:pointer;
+        cursor: pointer;
     }
 
 .rest-logo {

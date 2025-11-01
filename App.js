@@ -1263,7 +1263,7 @@ const RestaurantCard = (props) => {
             src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ cloudinaryImageId} 
             alt="Fav restaurant" />
             <h3>{name}, {locality}</h3>
-            <p>{cuisines.join(",")}</p>
+            <p className="cuisines" title={cuisines.join(", ")}>{cuisines.join(", ")}</p>
             <p>{avgRating}</p>
         </div>
     );
@@ -1293,5 +1293,3 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<AppLayout />); // render funcational component to the page.
 // React element object converted to HTML and displayed inside root div
-
-
