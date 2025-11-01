@@ -70,6 +70,7 @@ const number = 100;
 const HeadingComponent = () => {
     return (
         <div>
+            {Title()}   {/* you can also call component as a function */ }
             <Title />
             <Title >Overriding Title</Title> {/* you can override component content using children props */}
             <h2>{number+1}</h2> {/* embedding JavaScript expression inside JSX using {} */}
