@@ -34,3 +34,16 @@ commands:
 	- parcel build index.html --dist-dir build
 
 	- npx parce build index.html --dist-dir build
+
+
+ 
+	AppLayout
+    - Header
+        - Logo
+        - Nav Items
+    - Body
+        - Search Bar
+        - Restaurant List
+        - Restaurant Card
+    - Footer
+
