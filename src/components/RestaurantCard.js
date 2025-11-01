@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RESTAURANT_IMAGE_URL } from "../utils/constants.js";
 
 /* 
 const restaurantCardStyle = {
@@ -27,7 +28,7 @@ const RestaurantCard = (props) => {
    return (
         <div className="rest-card" >
             <img className="rest-logo"
-            src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+ cloudinaryImageId} 
+            src={RESTAURANT_IMAGE_URL + cloudinaryImageId} 
             alt="Fav restaurant" />
             <h3>{name}, {locality}</h3>
             <p className="cuisines" title={cuisines.join(", ")}>{cuisines.join(", ")}</p>

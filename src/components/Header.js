@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { LOGO_URL } from "../utils/constants.js";
 
 const LogoHeader = () => (
     
         <div className="logo-container">
-            <img src="https://avatars.githubusercontent.com/u/16599609?s=48&v=4" alt="App Logo" className="logo" />
+            <img src={LOGO_URL} alt="App Logo" className="logo" />
         </div>
     
 );
