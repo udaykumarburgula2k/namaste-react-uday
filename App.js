@@ -28,7 +28,7 @@ console.log(jsxHeading); // This will log a React element object
 const HeadingComponent = () => {
     return (
         <h1>
-            Nameste from HeadingComponent
+            Nameste from HeadingComponent!!
         </h1>
     );
 };
@@ -45,6 +45,7 @@ const HeadingComponent3 = () => <h1 id="jsx-heading" className="header" tabIndex
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading); // React element object converted to HTML and displayed inside root div
+root.render(<HeadingComponent />); // render funcational component to the page.
+// React element object converted to HTML and displayed inside root div
 
 
