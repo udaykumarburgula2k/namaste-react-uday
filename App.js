@@ -9,12 +9,39 @@ import ReactDOM from "react-dom/client";
 
 
 // JSX - JavaScript XML (HTML like syntax inside JavaScript)
+
+// React element using JSX
 const jsxHeading = (
     <h1 id="jsx-heading" className="header" tabIndex="2" >
         Nameste JSX--
     </h1>);
 
+ 
+
+
 console.log(jsxHeading); // This will log a React element object
+
+// React Component - A function that returns a React element
+// 2 Types of Components - Functional Components - NEW way and Class Based Components - OLD way
+
+// React Functional Component - using return statement
+const HeadingComponent = () => {
+    return (
+        <h1>
+            Nameste from HeadingComponent
+        </h1>
+    );
+};
+
+// React Functional Component - Equivalent to above code - multiline JSX must be wrapped in parentheses
+const HeadingComponent1 = () => (
+    <h1 id="jsx-heading" className="header" tabIndex="2" >
+        Nameste JSX--
+    </h1>);
+
+// React Functional Component - Equivalent to above code - single line JSX does not need parentheses
+const HeadingComponent3 = () => <h1 id="jsx-heading" className="header" tabIndex="2" >Nameste JSX--</h1>;
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
