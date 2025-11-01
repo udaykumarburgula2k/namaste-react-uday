@@ -34,7 +34,7 @@ const HeadingComponent = () => {
 };
 
 // React Functional Component - Equivalent to above code - multiline JSX must be wrapped in parentheses
-const HeadingComponent1 = () => (
+const HeadingComponent2 = () => (
     <h1 id="jsx-heading" className="header" tabIndex="2" >
         Nameste JSX--
     </h1>);
