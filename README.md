@@ -47,3 +47,16 @@ commands:
         - Restaurant Card
     - Footer
 
+
+	Two type of Export/Import
+	1) Default 
+	2) Named 
+
+	#React Hooks
+	1) Normal JS utility functions written by facebook developers inside the react
+	2) Two important Hooks
+		a) useState() : super powerful state variable, named import from react.
+		b) useEffect() : 
+
+
+	

@@ -1,34 +1,41 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import RestaurantCard from "./RestaurantCard";
 import  restaurantList  from "../utils/mockData.js";
 
-// const filterData = (searchText, restaurantList) => {
-// 	console.log("Top Rated Clicked")
-// 	return restaurantList.filter((restaurant) =>
-// 		newRestaurantList = restaurantList?.filter(restaurant => restaurant.info.avgRating > 4)
-// 	);
-// }
 
 const Body = () => {
 
-		let newRestaurantList = restaurantList;
+	    // useState variable
+		const [newRestaurantList, setNewRestaurantList] = useState(
+		restaurantList
+		);
+		
+		// normal variable
+		// let newRestaurantList = restaurantList;
 		
 
 		return  (
 			<div style={{backgroundColor: "#8080F0"}}>
 				<div className="search-bar">Search</div>
 				<div className="filter-btn-toprated">
-					<button onClick={()=> {
-						console.log("Top Rated Clicked");
-						newRestaurantList = restaurantList?.filter(restaurant => restaurant.info.avgRating > 4);
-						console.log(newRestaurantList);
+					<button onClick={
+						()=> 
+						{
+							console.log("Top Rated Clicked");
+							const filteredNewRestaurantList = 
+							restaurantList?.filter(restaurant => restaurant.info.avgRating > 4);
+							//	filtering logic
+							setNewRestaurantList(filteredNewRestaurantList); 
+							// React way of updating UI
+							// console.log(newRestaurantList);
 
-					} }>Top Rated Restaurants</button>
+						} 
+					}>Top Rated Restaurants</button>
 				</div>
 				<div className="rest-container">
 				{
-					newRestaurantList.map((restaurant) => 
+					newRestaurantList?.map((restaurant) => 
 						(
 							<RestaurantCard key={restaurant.info.id} resData={restaurant} ></RestaurantCard>
 						)
