@@ -19,11 +19,11 @@ const restaurantCardStyle = {
 const RestaurantCard = (props) => {
     // method #1 props passed as parameter
   /* props */
-   console.log(props);
+   // console.log(props);
   // method #2 destructuring props object
   const {resData} = props; // destructuring props object
   const {name, locality, cuisines, avgRating, cloudinaryImageId} = resData?.info; // destructuring resData object
-  console.log(resData);
+  // console.log(resData);
   // method #3 destructuring in parameter
    return (
         <div className="rest-card" >

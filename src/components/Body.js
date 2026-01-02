@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import RestaurantCard from "./RestaurantCard";
 import  restaurantList  from "../utils/mockData.js";
@@ -13,7 +13,11 @@ const Body = () => {
 		
 		// normal variable
 		// let newRestaurantList = restaurantList;
-		
+		useEffect(() => {
+			console.log("useEffect called----------");
+		}, []);  
+
+		console.log("Body Rendered");
 
 		return  (
 			<div style={{backgroundColor: "#8080F0"}}>

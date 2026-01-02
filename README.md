@@ -59,4 +59,25 @@ commands:
 		b) useEffect() : 
 
 
+	Reactjs is efficient DOM manipulation using Virtual DOM by using reconciliation algorithm.
+
+	Virtual DOM
+		- Lightweight copy of the real DOM
+		- JS object
+		- Faster to read and write
+		- Updates done in Virtual DOM first
+		- Diff b/w virtual DOM and real DOM is calculated
+		- Only the diff is updated in the real DOM
+		- Minimizes real DOM manipulations
+		- Improves performance and user experience
+		- React maintains Virtual DOM
+		- When state of a component changes, a new Virtual DOM is created
+		- Diff b/w previous Virtual DOM and new Virtual DOM is calculated using Reconciliation algorithm
+		- Only the diff is updated in the real DOM
+		- This process is called Reconciliation
+		- Improves performance and user experience
+		- Key prop is used to uniquely identify elements in a list
+		- Helps React to identify which items have changed, added or removed
+		- Improves performance during re-renders
+
 	
